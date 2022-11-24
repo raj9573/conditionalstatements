@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>hai</h1>
+        <h1>if else  condition</h1>
+        {% if a > b %}
+            <h3>if block</h3>
+            <h2>{{a}} is greater than {{b}}</h2>
+        {% else %}
+            <h3>else block</h3>
+            <h2>{{b}} is greater than {{a}}</h2>
+        {% endif %}
+    </center> -->
+    <center>
+    <h1>IF ELIF</h1>
+    {% if a > b and a > c%}
+        <h2>if block</h2>
+        <h2>{{a}} is greater than among the numbers</h2>
+    
+    {% elif b > c %}
+        <h2>{{b}} is greater than all</h2>
+    {% else %}
+        <h3>else block</h3>
+        <h2>{{c}} is greater than all</h2>
+    {% endif %}
+</center>
+        
+<center>
+    <h1>NESTED IF ELSE</h1>
+    {% if a > b %}
+        {% if a > c %}
+            <h4>inside if</h4>
+            <h3> a= {{a}} is greater than all</h3>
+        {% else %}
+            <h4>inside inner if elseblock</h4>
+            <h3>c= {{c}} is greater than all</h3>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+            <h3>outer if-else block</h3>
+            <h3>b= {{b}} is greater than all</h3>
+        {% else %}
+            <h3>outer if else-block else</h3>
+            <h3>c= {{c}} is greaater than all</h3>
+        {% endif %}
+    {% endif %}
+</center>
+    <center>
+        {% if a < b %}
+            <h1>b is greater </h1>
+        {% endif %}
+    </center>
+</body>
+</html>
